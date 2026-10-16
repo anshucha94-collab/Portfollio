@@ -13,8 +13,8 @@ const headingFont = Sora({
 });
 
 export const metadata = {
-  title: "karan Portfolio",
-  description: "Portfolio website for projects, and dynamic project pages.",
+  title: "Anshu Chandola | Aspiring Full-Stack Developer",
+  description: "Portfolio of Anshu Chandola, a Computer Science diploma student and aspiring full-stack developer from Uttarakhand, India.",
 };
 
 export default function RootLayout({ children }) {

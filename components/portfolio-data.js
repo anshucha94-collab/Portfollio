@@ -1,111 +1,106 @@
+export const profile = {
+  name: "Anshu Chandola",
+  initials: "AC",
+  headline: "Computer Science Diploma Student | Aspiring Full-Stack Developer",
+  location: "Uttarakhand, India",
+  phone: "+91 8445427876",
+  email: "anshucha94@gmail.com",
+  linkedin: "https://linkedin.com/in/anshu-chandola-447957326",
+  github: "https://github.com/anshucha94-collab",
+  summary:
+    "Computer Science diploma student with hands-on project exposure across web application development, database-backed systems, and responsive user interfaces. Familiar with HTML, CSS, JavaScript, React, Next.js, Node.js/Express, SQL, MySQL, PostgreSQL, and Prisma through academic and personal project work. Completed a four-week internship in Web Development Using Python at Ensino Research and Development Pvt. Ltd. Seeking a full-stack development opportunity to strengthen engineering fundamentals and contribute to practical software products.",
+};
+
+export const skillGroups = [
+  { label: "Languages", items: ["C", "C++", "Python (fundamentals)", "JavaScript", "SQL"] },
+  { label: "Frontend", items: ["HTML5", "CSS3", "React", "Next.js", "Tailwind CSS", "Vite"] },
+  { label: "Backend & APIs", items: ["Node.js", "Express.js", "REST API concepts"] },
+  { label: "Databases & ORM", items: ["MySQL", "PostgreSQL", "Prisma", "DBMS/RDBMS"] },
+  { label: "Tools", items: ["Visual Studio Code", "Git (fundamentals)", "MySQL Workbench"] },
+  { label: "CS fundamentals", items: ["OOP", "Data structures fundamentals", "Computer networks"] },
+];
+
+export const internship = {
+  role: "Web Development Using Python Intern",
+  company: "Ensino Research and Development Pvt. Ltd.",
+  dates: "04 June 2026 – 01 July 2026",
+  details: [
+    "Completed a four-week internship focused on Web Development Using Python.",
+    "Gained practical exposure to web development workflows, application structure, and project-oriented learning.",
+    "Prepared internship documentation and presentation material covering objectives, workflow, learning outcomes, and project work.",
+  ],
+};
+
+export const education = [
+  {
+    qualification: "Diploma in Computer Science",
+    institution: "Uttarakhand Government Institute of Polytechnic, Bhimtal, Uttarakhand",
+    dates: "2025–2027",
+    detail: "5th Semester (as of October 2026) · CGPA: 7.63",
+  },
+  { qualification: "Class XII — CBSE", institution: "Completed in 2023", dates: "2023", detail: "Marks not provided" },
+  { qualification: "Class X — CBSE", institution: "Completed in 2021", dates: "2021", detail: "Marks not provided" },
+];
+
+export const strengths = [
+  "Logical thinking",
+  "Problem-solving",
+  "Self-learning",
+  "Team collaboration",
+  "Building practical web applications",
+];
+
 export const portfolioProjects = [
   {
-    slug: "medpredict",
+    slug: "hostelos",
     index: "01",
-    title: "MedPredict",
-    eyebrow: "AI Health Platform",
-    type: "Healthcare AI",
-    year: "2025",
+    title: "Smart Hostel Management System (HostelOS)",
+    eyebrow: "Hostel Management",
+    year: "Academic project",
     summary:
-      "A Django-based disease prediction and AI guidance system that combines a Random Forest classifier with Gemini 2.5 Flash for explanation, precautions, and follow-up support.",
-    hero:
-      "A full-stack health assistant that turns symptom input into structured predictions, practical advice, and a conversational medical companion.",
-    cover: "/karan3.jpeg",
-    accent: "from-[#ffb347] via-[#ff8a3d] to-[#23111d]",
-    stack: ["Django 6.0", "Python 3.13", "Random Forest", "Gemini 2.5 Flash"],
-    highlights: [
-      "Symptom checker with multi-input prediction",
-      "Smart reports with precautions, diet, and workouts",
-      "AI doctor chat with contextual follow-up support",
-      "CSV-driven medical knowledge layer",
-    ],
-    challenge:
-      "Bridge fast symptom triage with trustworthy explanations instead of a bare disease label.",
-    solution:
-      "Use a trained classifier for the diagnosis, then ground Gemini responses in that prediction to generate an understandable report.",
-    outcome:
-      "A clear first-step health tool that is easy to use on mobile and structured for future multimodal expansion.",
+      "A hostel-management application concept for student records, room information, and hostel entry/exit monitoring.",
+    description:
+      "Planned student movement logs with dates and timestamps, alongside a dashboard for hostel statistics and recent activity. QR-code scanning was explored as a way to record entry and exit status, with database-backed record management.",
+    stack: ["Next.js", "React", "Express.js", "Prisma", "PostgreSQL"],
+    accent: "from-[#ef7158] via-[#d8a14b] to-[#253f3a]",
   },
   {
-    slug: "giniebot",
+    slug: "service-finder",
     index: "02",
-    title: "GinieBot",
-    eyebrow: "Document Intelligence",
-    type: "RAG Chatbot",
-    year: "2025",
+    title: "Service Finder Website",
+    eyebrow: "Local Services",
+    year: "Personal project",
     summary:
-      "A private document assistant built around semantic search, vector retrieval, and grounded answers sourced from uploaded PDFs, Word files, and text documents.",
-    hero:
-      "A secure chat experience for asking direct questions about your own files with source-backed answers and a privacy-first retrieval layer.",
-    cover: "/karan3.jpeg",
-    accent: "from-[#8c7bff] via-[#6f52ff] to-[#10141f]",
-    stack: ["FastAPI", "Next.js", "Supabase", "Gemini"],
-    highlights: [
-      "Semantic search across private documents",
-      "Source citations for every answer",
-      "Multi-format document ingestion",
-      "Row-level security for user isolation",
-    ],
-    challenge:
-      "Make it easy to query long private documents without keyword-search friction or hallucinated answers.",
-    solution:
-      "Chunk the documents, vectorize the content, retrieve the best matches, then ground the LLM on those excerpts.",
-    outcome:
-      "Fast, explainable answers that feel like a dedicated researcher for each user’s own files.",
+      "A responsive interface concept for discovering local service providers across common home and repair categories.",
+    description:
+      "Designed service and worker listing sections for plumbing, electrical work, cleaning, painting, mechanics, and AC repair, with a distance-based discovery concept for 5 km, 10 km, and 20 km.",
+    stack: ["React", "Vite", "Tailwind CSS", "JavaScript"],
+    accent: "from-[#3d8278] via-[#d0b858] to-[#e6815c]",
   },
   {
     slug: "codesnippets",
     index: "03",
     title: "CodeSnippets",
     eyebrow: "Developer Utility",
-    type: "Snippet Library",
-    year: "2026",
-    summary:
-      "A compact snippet library for saving, organizing, and reusing code blocks across projects without losing context or language tags.",
-    hero:
-      "A quick-access workspace for storing reusable snippets, tagging them by language, and copying them in a few clicks.",
-    cover: "/karan3.jpeg",
-    accent: "from-[#7dd3fc] via-[#4f46e5] to-[#111827]",
-    stack: ["Next.js", "Tailwind", "Markdown", "Search"],
-    highlights: [
-      "Tag-based snippet organization",
-      "Fast copy-to-clipboard workflow",
-      "Filters for language and topic",
-      "Minimal editor-friendly interface",
-    ],
-    challenge:
-      "Keep snippets discoverable without turning the app into a heavy editor.",
-    solution:
-      "Use searchable cards, metadata chips, and simple actions that stay out of the way.",
-    outcome:
-      "A lightweight reference hub that is fast to scan during day-to-day development.",
+    year: "Project concept",
+    summary: "A project concept for organizing reusable programming examples for convenient reference and code reuse.",
+    description: "The project technology stack and implementation details have not been confirmed.",
+    stack: [],
+    accent: "from-[#548caa] via-[#91b2a2] to-[#d3ad64]",
   },
   {
-    slug: "tenkay-neighbourhood-worker-portal",
+    slug: "medpredict",
     index: "04",
-    title: "Tenkay Neighbourhood Worker Portal",
-    eyebrow: "Operations Platform",
-    type: "Community Operations",
-    year: "2026",
+    title: "MedPredict / MEDMIND",
+    eyebrow: "Health-related project",
+    year: "Academic project",
     summary:
-      "A portal for neighbourhood workers to track requests, manage assignments, and keep local work organized from one dashboard.",
-    hero:
-      "A staff-facing web portal built for daily task handling, service requests, and neighbourhood-level coordination.",
-    cover: "/karan3.jpeg",
-    accent: "from-[#fde68a] via-[#fb923c] to-[#1f2937]",
-    stack: ["Admin Dashboard", "Role Access", "Task Management", "Reporting"],
-    highlights: [
-      "Worker assignment workflow",
-      "Request queue and status tracking",
-      "Role-based access for teams",
-      "Clear operational dashboard",
-    ],
-    challenge:
-      "Make community work easy to manage for staff who need a fast overview.",
-    solution:
-      "Use simple cards, status cues, and a workflow-first layout that reduces clutter.",
-    outcome:
-      "A practical portal concept that can be expanded with forms, alerts, and reporting.",
+      "A health-related prediction project discussed in academic project and internship presentation work.",
+    description:
+      "The specific model, dataset, and deployed features have not been verified, so implementation details are intentionally not listed.",
+    liveUrl: "https://medweb-1m13.onrender.com",
+    stack: [],
+    accent: "from-[#bb6262] via-[#d7a678] to-[#68857b]",
   },
 ];
 

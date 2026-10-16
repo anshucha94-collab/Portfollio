@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${project.title} | Karan Portfolio`,
+    title: `${project.title} | Anshu Chandola`,
     description: project.summary,
   };
 }
